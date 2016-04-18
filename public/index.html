@@ -1,0 +1,56 @@
+<!doctype html>
+<html ng-app="app">
+
+<head>
+    <title>WebSockets - Alpaca Forms</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!--    Alpaca CSS-->
+    <link type="text/css" href="//code.cloudcms.com/alpaca/1.5.17/bootstrap/alpaca.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="">
+
+    <section class="main">
+
+        <!--       Header-->
+        <header ng-include src="'views/common/header.html'" class="clearfix app-header"> </header>
+
+        <!--Main Content-->
+        <section class="container">
+     <section class="row">
+            <div ng-controller="mainCtrl" class="col-xs-12">
+
+                <div class="alp-form-container">
+                    <div id="alpaca-form">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+       </section>
+       
+        <!--    Footer -->
+    <div ng-include src="'views/common/footer.html'" class=""> </div>
+
+    </section>
+
+    <!--    Scripts-->
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+    <!--   HandleBars and Alpaca-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    <script type="text/javascript" src="http://code.cloudcms.com/alpaca/1.5.17/bootstrap/alpaca.min.js"></script>
+
+    <!--   App Code for Socket-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
